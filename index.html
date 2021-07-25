@@ -26,10 +26,12 @@
   </div>
 
   <!-- Hero Banner -->
-  <div class="hero-text">
-    <h1>I am Sophia</h1>
-    <p>And I'm an Engineer</p>
-    <button>About Me</button>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>I am Sophia</h1>
+      <p>And I'm an Engineer</p>
+      <button>About Me</button>
+    </div>
   </div>
 
   <!-- CSS -->
@@ -37,6 +39,20 @@
   body {background-color: powderblue;}
   h1   {color: blue;}
   p    {color: green;}
+
+  .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Japan.jpg");
+
+    /* Set a specific height */
+    height: 50%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
   .hero-text {
     text-align: center;
